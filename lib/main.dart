@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterlearn/home.dart';
+import 'package:flutterlearn/welcome.dart';
 
 void main() {
   runApp(const MyApp());
