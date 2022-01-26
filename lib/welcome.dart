@@ -15,6 +15,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xFFF3F3F3),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
@@ -39,20 +40,21 @@ class _MyHomePageState extends State<MyHomePage> {
                   padding:
                       EdgeInsets.symmetric(vertical: 20.0, horizontal: 10.0),
                   child: Image.asset('asset/Capturee.png')),
+              SizedBox(height: 60,),
               Column(
                 children: <Widget>[
                   Text(
-                    'Welcome! I am delighted to learn Flutter with you',
+                    'Welcome! I am delighted to\n learn Flutter with you',
                     style: GoogleFonts.poppins(
-                        fontSize: 21, fontWeight: FontWeight.w600),
+                        fontSize: 19, fontWeight: FontWeight.w800),
                     textAlign: TextAlign.center,
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 20.0),
+                    padding: const EdgeInsets.all(20.0),
                     child: Text(
-                      'I made available lots of flutter UI templates that you can seamlessly use to start and complete your flutter application project with little or no stress. I hope this will be helpfull.',
+                      'Available flutter UI templates that you can seamlessly use to start and complete your flutter application project with little or no stress. I hope this will be helpfull.',
                       style: GoogleFonts.poppins(
-                        fontSize: 18,
+                        fontSize: 15,
                       ),
                       textAlign: TextAlign.center,
                     ),
@@ -60,12 +62,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 ],
               ),
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 30),
+                padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 30),
                 child: Container(
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
-                    color: Colors.green,
-                    borderRadius: BorderRadius.circular(30.0),
+                    color: Color(0xFFE34F60),
+                    borderRadius: BorderRadius.circular(10.0),
                   ),
                   child: FlatButton(
                       onPressed: () {
@@ -74,9 +76,12 @@ class _MyHomePageState extends State<MyHomePage> {
                             MaterialPageRoute(
                                 builder: (context) => mainPage()));
                       },
-                      child: Text(
-                        "Let's Flutter",
-                        style: TextStyle(color: Colors.white),
+                      child: Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Text(
+                          "Let's Flutter",
+                          style: GoogleFonts.poppins(color: Colors.white, fontWeight: FontWeight.bold),
+                        ),
                       )),
                 ),
               )
