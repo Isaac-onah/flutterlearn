@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -22,7 +21,7 @@ class _mainPageState extends State<mainPage> {
                 flex: 2,
                 child: Container(
                   decoration: BoxDecoration(
-                     color: Color(0xFFF3F3F3),
+                    color: Color(0xFFF3F3F3),
                     boxShadow: [
                       BoxShadow(
                         color: Colors.grey.shade400,
@@ -38,16 +37,16 @@ class _mainPageState extends State<mainPage> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
-                            Column(
-                                  children: [
-                                    Text("data"),
-                                    Text("data"),
-                                  ],
-                                ),
+                          Column(
+                            children: [
+                              Text("data"),
+                              Text("data"),
+                            ],
+                          ),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: CircleAvatar(
-                              radius:30,
+                              radius: 30,
                               backgroundImage: AssetImage(
                                 "asset/Capturee.png",
                               ),
@@ -55,20 +54,27 @@ class _mainPageState extends State<mainPage> {
                           ),
                         ],
                       ),
-                      SizedBox(height: 50,),
+                      SizedBox(
+                        height: 50,
+                      ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Container(
                             decoration: BoxDecoration(
-                                color:  Color(0xFFE5E5E5),
-                                borderRadius: BorderRadius.only(topRight: Radius.circular(30),bottomRight: Radius.circular(30))
-                            ),
+                                color: Color(0xFFE5E5E5),
+                                borderRadius: BorderRadius.only(
+                                    topRight: Radius.circular(30),
+                                    bottomRight: Radius.circular(30))),
                             child: Padding(
                               padding: const EdgeInsets.all(20.0),
                               child: Text('Screen List',
-                                  style: GoogleFonts.poppins(fontSize: 12, fontWeight: FontWeight.bold,color: Colors.black,)),
+                                  style: GoogleFonts.poppins(
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.black,
+                                  )),
                             ),
                           )
                         ],
@@ -79,17 +85,16 @@ class _mainPageState extends State<mainPage> {
             Expanded(
               flex: 6,
               child: Padding(
-                padding: EdgeInsets.only(top:30.0, left: 10, right: 10),
+                padding: EdgeInsets.only(top: 30.0, left: 10, right: 10),
                 child: ListView(
                   children: [
                     Container(
-                      color:Color(0xFFF3F3F3),
+                      color: Color(0xFFF3F3F3),
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Theme(
-                            data:theme,
+                          data: theme,
                           child: ExpansionTile(
-
                             tilePadding: EdgeInsets.all(0.0),
                             leading: Expanded(
                               child: Padding(
@@ -130,36 +135,53 @@ class _mainPageState extends State<mainPage> {
                               ),
                             ),
                             children: [
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Column(
-                                  children: [
-                                    InkWell(
-                                      onTap: (){},
-                                      child: Row(
-                                        children: [
-                                          Padding(
-                                            padding: const EdgeInsets.all(8.0),
-                                            child: Text('LoginScreen 1',style: GoogleFonts.poppins(
-                                                textStyle: TextStyle(
-                                                  color: Colors.black,
-                                                  fontWeight: FontWeight.normal,
-                                                  letterSpacing: .5,
-                                                  fontSize: 13,
+                              Column(
+                                children: [
+                                  InkWell(
+                                    onTap: () {},
+                                    child: Row(
+                                      children: [
+                                        Expanded(
+                                          child: Container(
+                                            decoration: BoxDecoration(
+                                              border: Border(
+                                                bottom: BorderSide(
+                                                  color: Color(0xFFABABAB).withOpacity(0.6),
+                                                ),
+                                              ),
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.all(8.0),
+                                              child: Text(
+                                                'LoginScreen 1',
+                                                style: GoogleFonts.poppins(
+                                                  textStyle: TextStyle(
+                                                    color: Colors.black,
+                                                    fontWeight: FontWeight.normal,
+                                                    letterSpacing: .5,
+                                                    fontSize: 13,
+                                                  ),
                                                 ),
                                               ),
                                             ),
                                           ),
-                                        ],
-                                      ),
+                                        ),
+                                      ],
                                     ),
-                                    InkWell(
-                                      onTap: (){},
-                                      child: Row(
-                                        children: [
-                                          Padding(
-                                            padding: const EdgeInsets.all(8.0),
-                                            child: Text('LoginScreen 2',style: GoogleFonts.poppins(
+                                  ),
+                                  InkWell(
+                                    customBorder: RoundedRectangleBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(18.0),
+                                        side: BorderSide(color: Colors.red)),
+                                    onTap: () {},
+                                    child: Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Text(
+                                            'LoginScreen 2',
+                                            style: GoogleFonts.poppins(
                                               textStyle: TextStyle(
                                                 color: Colors.black,
                                                 fontWeight: FontWeight.normal,
@@ -167,18 +189,20 @@ class _mainPageState extends State<mainPage> {
                                                 fontSize: 13,
                                               ),
                                             ),
-                                            ),
                                           ),
-                                        ],
-                                      ),
+                                        ),
+                                      ],
                                     ),
-                                    InkWell(
-                                      onTap: (){},
-                                      child: Row(
-                                        children: [
-                                          Padding(
-                                            padding: const EdgeInsets.all(8.0),
-                                            child: Text('Login & Registration 1',style: GoogleFonts.poppins(
+                                  ),
+                                  InkWell(
+                                    onTap: () {},
+                                    child: Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Text(
+                                            'Login & Registration 1',
+                                            style: GoogleFonts.poppins(
                                               textStyle: TextStyle(
                                                 color: Colors.black,
                                                 fontWeight: FontWeight.normal,
@@ -186,18 +210,20 @@ class _mainPageState extends State<mainPage> {
                                                 fontSize: 13,
                                               ),
                                             ),
-                                            ),
                                           ),
-                                        ],
-                                      ),
+                                        ),
+                                      ],
                                     ),
-                                    InkWell(
-                                      onTap: (){},
-                                      child: Row(
-                                        children: [
-                                          Padding(
-                                            padding: const EdgeInsets.all(8.0),
-                                            child: Text('Login & Registration 2',style: GoogleFonts.poppins(
+                                  ),
+                                  InkWell(
+                                    onTap: () {},
+                                    child: Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Text(
+                                            'Login & Registration 2',
+                                            style: GoogleFonts.poppins(
                                               textStyle: TextStyle(
                                                 color: Colors.black,
                                                 fontWeight: FontWeight.normal,
@@ -205,18 +231,20 @@ class _mainPageState extends State<mainPage> {
                                                 fontSize: 13,
                                               ),
                                             ),
-                                            ),
                                           ),
-                                        ],
-                                      ),
+                                        ),
+                                      ],
                                     ),
-                                    InkWell(
-                                      onTap: (){},
-                                      child: Row(
-                                        children: [
-                                          Padding(
-                                            padding: const EdgeInsets.all(8.0),
-                                            child: Text('Login & Registration 3',style: GoogleFonts.poppins(
+                                  ),
+                                  InkWell(
+                                    onTap: () {},
+                                    child: Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Text(
+                                            'Login & Registration 3',
+                                            style: GoogleFonts.poppins(
                                               textStyle: TextStyle(
                                                 color: Colors.black,
                                                 fontWeight: FontWeight.normal,
@@ -224,13 +252,12 @@ class _mainPageState extends State<mainPage> {
                                                 fontSize: 13,
                                               ),
                                             ),
-                                            ),
                                           ),
-                                        ],
-                                      ),
+                                        ),
+                                      ],
                                     ),
-                                  ],
-                                ),
+                                  ),
+                                ],
                               )
                             ],
                           ),
