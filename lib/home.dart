@@ -12,6 +12,7 @@ class mainPage extends StatefulWidget {
 class _mainPageState extends State<mainPage> {
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context).copyWith(dividerColor: Colors.transparent);
     return Scaffold(
       backgroundColor: Color(0xFFE5E5E5),
       body: SafeArea(
@@ -81,64 +82,159 @@ class _mainPageState extends State<mainPage> {
                 padding: EdgeInsets.only(top:30.0, left: 10, right: 10),
                 child: ListView(
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: ExpansionTile(
-                        tilePadding: EdgeInsets.all(0.0),
-                        leading: Expanded(
-                          child: Padding(
-                            padding: const EdgeInsets.all(2.0),
-                            child: Container(
-                              child: Image.asset("asset/icon1.png"),
-                            ),
-                          ),
-                        ),
-                        trailing: Expanded(
-                          child: Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Icon(
-                                Icons.arrow_drop_down_circle,
-                                color: Color(0xFFF19280),
-                              )),
-                        ),
-                        title: Expanded(
-                          child: Text(
-                            'Authentication',
-                            style: GoogleFonts.poppins(
-                              fontWeight: FontWeight.w600,
-                              textStyle: TextStyle(
-                                fontSize: 15,
-                              ),
-                            ),
-                          ),
-                        ),
-                        subtitle: Expanded(
-                          child: Text(
-                            'Login/Registration',
-                            style: GoogleFonts.poppins(
-                              fontWeight: FontWeight.normal,
-                              textStyle: TextStyle(
-                                fontSize: 15,
-                              ),
-                            ),
-                          ),
-                        ),
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Text(
-                              'Visit your District office as shown on your bill and apply for a pre-paid meter, or fill an application form online on our website. The Pre-paid meters will be made available to you once the process is completed.',
-                              style: GoogleFonts.poppins(
-                                textStyle: TextStyle(
-                                  color: Colors.black,
-                                  fontWeight: FontWeight.normal,
-                                  letterSpacing: .5,
-                                  fontSize: 13,
+                    Container(
+                      color:Color(0xFFF3F3F3),
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Theme(
+                            data:theme,
+                          child: ExpansionTile(
+
+                            tilePadding: EdgeInsets.all(0.0),
+                            leading: Expanded(
+                              child: Padding(
+                                padding: const EdgeInsets.all(2.0),
+                                child: Container(
+                                  child: Image.asset("asset/icon1.png"),
                                 ),
                               ),
                             ),
-                          )
-                        ],
+                            trailing: Expanded(
+                              child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Icon(
+                                    Icons.arrow_drop_down_circle,
+                                    color: Color(0xFFF19280),
+                                  )),
+                            ),
+                            title: Expanded(
+                              child: Text(
+                                'Authentication',
+                                style: GoogleFonts.poppins(
+                                  fontWeight: FontWeight.w600,
+                                  textStyle: TextStyle(
+                                    fontSize: 15,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            subtitle: Expanded(
+                              child: Text(
+                                'Login/Registration',
+                                style: GoogleFonts.poppins(
+                                  fontWeight: FontWeight.normal,
+                                  textStyle: TextStyle(
+                                    fontSize: 15,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Column(
+                                  children: [
+                                    InkWell(
+                                      onTap: (){},
+                                      child: Row(
+                                        children: [
+                                          Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Text('LoginScreen 1',style: GoogleFonts.poppins(
+                                                textStyle: TextStyle(
+                                                  color: Colors.black,
+                                                  fontWeight: FontWeight.normal,
+                                                  letterSpacing: .5,
+                                                  fontSize: 13,
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    InkWell(
+                                      onTap: (){},
+                                      child: Row(
+                                        children: [
+                                          Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Text('LoginScreen 2',style: GoogleFonts.poppins(
+                                              textStyle: TextStyle(
+                                                color: Colors.black,
+                                                fontWeight: FontWeight.normal,
+                                                letterSpacing: .5,
+                                                fontSize: 13,
+                                              ),
+                                            ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    InkWell(
+                                      onTap: (){},
+                                      child: Row(
+                                        children: [
+                                          Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Text('Login & Registration 1',style: GoogleFonts.poppins(
+                                              textStyle: TextStyle(
+                                                color: Colors.black,
+                                                fontWeight: FontWeight.normal,
+                                                letterSpacing: .5,
+                                                fontSize: 13,
+                                              ),
+                                            ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    InkWell(
+                                      onTap: (){},
+                                      child: Row(
+                                        children: [
+                                          Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Text('Login & Registration 2',style: GoogleFonts.poppins(
+                                              textStyle: TextStyle(
+                                                color: Colors.black,
+                                                fontWeight: FontWeight.normal,
+                                                letterSpacing: .5,
+                                                fontSize: 13,
+                                              ),
+                                            ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    InkWell(
+                                      onTap: (){},
+                                      child: Row(
+                                        children: [
+                                          Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Text('Login & Registration 3',style: GoogleFonts.poppins(
+                                              textStyle: TextStyle(
+                                                color: Colors.black,
+                                                fontWeight: FontWeight.normal,
+                                                letterSpacing: .5,
+                                                fontSize: 13,
+                                              ),
+                                            ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
                       ),
                     ),
                     Padding(
