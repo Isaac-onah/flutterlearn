@@ -170,23 +170,30 @@ class _mainPageState extends State<mainPage> {
                                     ),
                                   ),
                                   InkWell(
-                                    customBorder: RoundedRectangleBorder(
-                                        borderRadius:
-                                            BorderRadius.circular(18.0),
-                                        side: BorderSide(color: Colors.red)),
                                     onTap: () {},
                                     child: Row(
                                       children: [
-                                        Padding(
-                                          padding: const EdgeInsets.all(8.0),
-                                          child: Text(
-                                            'LoginScreen 2',
-                                            style: GoogleFonts.poppins(
-                                              textStyle: TextStyle(
-                                                color: Colors.black,
-                                                fontWeight: FontWeight.normal,
-                                                letterSpacing: .5,
-                                                fontSize: 13,
+                                        Expanded(
+                                          child: Container(
+                                            decoration: BoxDecoration(
+                                              border: Border(
+                                                bottom: BorderSide(
+                                                  color: Color(0xFFABABAB).withOpacity(0.6),
+                                                ),
+                                              ),
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.all(8.0),
+                                              child: Text(
+                                                'LoginScreen 2',
+                                                style: GoogleFonts.poppins(
+                                                  textStyle: TextStyle(
+                                                    color: Colors.black,
+                                                    fontWeight: FontWeight.normal,
+                                                    letterSpacing: .5,
+                                                    fontSize: 13,
+                                                  ),
+                                                ),
                                               ),
                                             ),
                                           ),
@@ -198,16 +205,27 @@ class _mainPageState extends State<mainPage> {
                                     onTap: () {},
                                     child: Row(
                                       children: [
-                                        Padding(
-                                          padding: const EdgeInsets.all(8.0),
-                                          child: Text(
-                                            'Login & Registration 1',
-                                            style: GoogleFonts.poppins(
-                                              textStyle: TextStyle(
-                                                color: Colors.black,
-                                                fontWeight: FontWeight.normal,
-                                                letterSpacing: .5,
-                                                fontSize: 13,
+                                        Expanded(
+                                          child: Container(
+                                            decoration: BoxDecoration(
+                                              border: Border(
+                                                bottom: BorderSide(
+                                                  color: Color(0xFFABABAB).withOpacity(0.6),
+                                                ),
+                                              ),
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.all(8.0),
+                                              child: Text(
+                                                'Login & Registration 1',
+                                                style: GoogleFonts.poppins(
+                                                  textStyle: TextStyle(
+                                                    color: Colors.black,
+                                                    fontWeight: FontWeight.normal,
+                                                    letterSpacing: .5,
+                                                    fontSize: 13,
+                                                  ),
+                                                ),
                                               ),
                                             ),
                                           ),
@@ -219,16 +237,27 @@ class _mainPageState extends State<mainPage> {
                                     onTap: () {},
                                     child: Row(
                                       children: [
-                                        Padding(
-                                          padding: const EdgeInsets.all(8.0),
-                                          child: Text(
-                                            'Login & Registration 2',
-                                            style: GoogleFonts.poppins(
-                                              textStyle: TextStyle(
-                                                color: Colors.black,
-                                                fontWeight: FontWeight.normal,
-                                                letterSpacing: .5,
-                                                fontSize: 13,
+                                        Expanded(
+                                          child: Container(
+                                            decoration: BoxDecoration(
+                                              border: Border(
+                                                bottom: BorderSide(
+                                                  color: Color(0xFFABABAB).withOpacity(0.6),
+                                                ),
+                                              ),
+                                            ),
+                                            child: Padding(
+                                              padding: const EdgeInsets.all(8.0),
+                                              child: Text(
+                                                'Login & Registration 2',
+                                                style: GoogleFonts.poppins(
+                                                  textStyle: TextStyle(
+                                                    color: Colors.black,
+                                                    fontWeight: FontWeight.normal,
+                                                    letterSpacing: .5,
+                                                    fontSize: 13,
+                                                  ),
+                                                ),
                                               ),
                                             ),
                                           ),
@@ -240,16 +269,20 @@ class _mainPageState extends State<mainPage> {
                                     onTap: () {},
                                     child: Row(
                                       children: [
-                                        Padding(
-                                          padding: const EdgeInsets.all(8.0),
-                                          child: Text(
-                                            'Login & Registration 3',
-                                            style: GoogleFonts.poppins(
-                                              textStyle: TextStyle(
-                                                color: Colors.black,
-                                                fontWeight: FontWeight.normal,
-                                                letterSpacing: .5,
-                                                fontSize: 13,
+                                        Expanded(
+                                          child: Container(
+                                            child: Padding(
+                                              padding: const EdgeInsets.all(8.0),
+                                              child: Text(
+                                                'Login & Registration 3',
+                                                style: GoogleFonts.poppins(
+                                                  textStyle: TextStyle(
+                                                    color: Colors.black,
+                                                    fontWeight: FontWeight.normal,
+                                                    letterSpacing: .5,
+                                                    fontSize: 13,
+                                                  ),
+                                                ),
                                               ),
                                             ),
                                           ),
