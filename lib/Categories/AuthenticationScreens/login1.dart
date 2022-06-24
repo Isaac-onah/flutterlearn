@@ -4,9 +4,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:widget_with_codeview/widget_with_codeview.dart';
 
-import 'constants.dart';
-import 'responsive.dart';
-
 class login1 extends StatefulWidget {
   const login1({Key? key}) : super(key: key);
 
