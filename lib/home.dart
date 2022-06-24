@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutterlearn/Categories/AuthenticationScreens/login1.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class mainPage extends StatefulWidget {
@@ -38,9 +40,20 @@ class _mainPageState extends State<mainPage> {
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
                           Column(
+                            crossAxisAlignment: CrossAxisAlignment.end,
                             children: [
-                              Text("data"),
-                              Text("data"),
+                              Text("Onah Isaac Onyema",
+                                  style: GoogleFonts.poppins(
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.black,
+                                  )),
+                              Text("Isaaconah991@gmail.com",
+                                  style: GoogleFonts.poppins(
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.normal,
+                                    color: Colors.black,
+                                  )),
                             ],
                           ),
                           Padding(
@@ -136,7 +149,9 @@ class _mainPageState extends State<mainPage> {
                               Column(
                                 children: [
                                   InkWell(
-                                    onTap: () {},
+                                    onTap: () {
+                                      Navigator.push(context, MaterialPageRoute(builder: (context)=> login1()));
+                                    },
                                     child: Row(
                                       children: [
                                         Expanded(
