@@ -4,14 +4,14 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:widget_with_codeview/widget_with_codeview.dart';
 
-class login1 extends StatefulWidget {
-  const login1({Key? key}) : super(key: key);
+class login2 extends StatefulWidget {
+  const login2({Key? key}) : super(key: key);
 
   @override
-  _login1State createState() => _login1State();
+  _login2State createState() => _login2State();
 }
 
-class _login1State extends State<login1> {
+class _login2State extends State<login2> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
