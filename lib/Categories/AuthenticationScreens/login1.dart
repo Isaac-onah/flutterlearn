@@ -32,6 +32,7 @@ class _login1State extends State<login1> {
             child:WidgetWithCodeView(
               bacgroundColor: Color(0xFFF19280),
               labelBackgroundColor: Color(0xFFF19280),
+              Color: Color(0xFFF19280),
               child: const loginone(),
               sourceFilePath: 'lib/screens.dart',
               iconBackgroundColor: Colors.white,
