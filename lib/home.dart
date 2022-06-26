@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterlearn/Categories/AuthenticationScreens/login1.dart';
 import 'package:flutterlearn/Categories/AuthenticationScreens/login2.dart';
+import 'package:flutterlearn/Categories/AuthenticationScreens/login3.dart';
+import 'package:flutterlearn/Categories/AuthenticationScreens/login4.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class mainPage extends StatefulWidget {
@@ -218,7 +220,9 @@ class _mainPageState extends State<mainPage> {
                                     ),
                                   ),
                                   InkWell(
-                                    onTap: () {},
+                                    onTap: () {
+                                      Navigator.push(context, MaterialPageRoute(builder: (context)=>login3()));
+                                    },
                                     child: Row(
                                       children: [
                                         Expanded(
@@ -250,7 +254,9 @@ class _mainPageState extends State<mainPage> {
                                     ),
                                   ),
                                   InkWell(
-                                    onTap: () {},
+                                    onTap: () {
+                                      Navigator.push(context, MaterialPageRoute(builder: (context)=>login4()));
+                                    },
                                     child: Row(
                                       children: [
                                         Expanded(
